@@ -1,0 +1,35 @@
+****general shortcuts****
+alt print -> save window image to pictures
+shift print -> select portion and save image to pictures
+print -> full screen to pictures
+ctrl alt del -> Log out user
+alt f1 -> shows all working windows
+win s -> shows all working windows
+win -> shows all working windows
+alt f2 -> run command
+win h -> hide current window
+win up -> fullscreen
+win down -> normal screen
+alt f7 -> move window
+shift f10 -> Right click
+ctrl alt T -> Open terminal
+
+****tools****
+***fdisk
+-> helps to delete partitions
+***qmv
+-> helps batch renaming file
+
+****commands****
+systemctl status <service> -> checks if a service is running or not
+systemctl disable <service> -> disables service to autostart on boot
+systemctl enable <service> -> enables service to autostart on boot
+systemctl is-enabled <service> -> checks if a service is enabled to autostart on boot
+service --status-all -> checks all running services
+curl ifconfig.me -> know my public ip address
+!! -> previous command
+notify-send -> sends a notification
+sudo apt purge '^package*' -> remove all files named package
+rm -rf folder -> remove all files in a folder
+snap changes -> check undergoing process
+snap abort pid -> closes process

@@ -1,0 +1,41 @@
+***Word***
+Remove all hyperlinks -> Ctrl A - Ctrl Shift F9
+Quick autocorrect -> Alt F7
+
+***Excel***
+Auto fit column -> Alt - H - O - I
+Ctrl space -> Select column
+Shift space -> Select row
+
+***Windows***
+Alt Space X -> Maximize
+Alt Space N -> Minimize
+Alt Space R -> Restore small size
+F2 -> Rename folder
+Ctrl Shift 1/2/3/4/5/6 -> Change folder view
+Alt Enter -> view properties
+Shift F10 -> Right click
+Win A -> action center
+Win I -> Settings
+win ctrl D -> Create new virtual desktop
+Win X -> Power user features
+Ctrl L -> focus on addressbar
+Alt 2 -> new folder
+Win Ctrl Shift B -> Restart graphic card
+Win Shift M -> Minimize all
+Win Shift D -> Show/Hide Desktop
+Win , -> Peek desktop
+Win number -> Open taskbar apps
+Win shift number -> Open taskbar new apps
+Win ctrl number -> Min/max taskbar apps
+Win alt number -> Open taskbar apps settings
+Ctrl shift app -> open as admin
+
+***browser***
+Ctrl shift T -> reopen closed browser
+F12 -> open console
+Ctrl U -> open page source
+Ctrl L -> focus on addressbar
+
+***CMD***
+netsh wlan show profile WLAN-name key=clear -> Shows password
