@@ -1,6 +1,0 @@
-vpn exploits
-leak tests
-deauth attack
-card skimmers
-icloud customer service
-amaozon customer service
