@@ -1,5 +1,5 @@
 --gets month's name
-select datename(month,date) from table
+\nselect datename(month,date) from table
 
 --group by alias name
 select datename(month,date) monthnm from table group by datename(month,date)
