@@ -1,6 +1,7 @@
 --gets month's name
-
+'''
 select datename(month,date) from table
+'''
 
 --group by alias name
 
