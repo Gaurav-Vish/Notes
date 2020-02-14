@@ -51,3 +51,9 @@ group by
     t.name, s.name, p.Rows
 order by
     t.name
+
+<li>get currently running query
+select r.total_elapsed_time / 1000.0 as total_elapsed_s,percent_complete, r.blocking_session_id,r.last_wait_type, s.login_name,'MySessionID= ' + cast(r.session_id as varchar) as MySessionID, DB_NAME(r.database_id) as DatabaseName, command ,SUBSTRING(t.text, (r.statement_start_offset/2) + 1, ((CASE statement_end_offset WHEN -1 THEN DATALENGTH(t.text) ELSE r.statement_end_offset END - r.statement_start_offset)/2) + 1) AS statement_text, r.status,wait_time, wait_type, wait_resource, text, start_time, s.program_name, r.last_wait_type, s.host_name, r.granted_query_memory * 8 / 1024 as memory_mb
+from sys.dm_exec_requests r
+inner join sys.dm_exec_sessions s on r.session_id = s.session_id
+cross apply sys.dm_exec_sql_text(r.sql_handle) t
