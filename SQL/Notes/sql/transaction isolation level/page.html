@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>TRANSACTION ISOLATION LEVEL</title>
+</head><body><b>TRANSACTION ISOLATION LEVEL<br/>
+<br/>
+</b>https://docs.microsoft.com/en-us/sql/t-sql/statements/set-transaction-isolation-level-transact-sql?redirectedfrom=MSDN&amp;view=sql-server-ver15<b><br/>
+</b><b><br/>
+</b><ul><span style="background-color: #ffffff"><li>READ UNCOMMITTED</li>
+</span></ul>
+Specifies that statements can read rows that have been modified by other transactions but not yet committed.<br/>
+<span style="background-color: #ffffff"></span><ul><span style="background-color: #ffffff"><li>READ COMMITTED</li>
+</span></ul>
+Specifies that statements cannot read data that has been modified but not committed by other transactions.<br/>
+<span style="background-color: #ffffff"></span><ul><span style="background-color: #ffffff"><li>REPEATABLE READ</li>
+</span></ul>
+Specifies that statements cannot read data that has been modified but not yet committed by other transactions and that no other transactions can modify data that has been read by the current transaction until the current transaction completes.<ul><li><span style="background-color: #ffffff"></span></li>
+</ul>
+<span style="background-color: #ffffff"></span><ul><span style="background-color: #ffffff"><li>SNAPSHOT</li>
+</span></ul>
+Specifies that data read by any statement in a transaction will be the transactionally consistent version of the data that existed at the start of the transaction. <br/>
+<span style="background-color: #ffffff"></span><ul><span style="background-color: #ffffff">SERIALIZABLE</span></ul>
+<br/>
+Specifies the following:-<ul><div style="text-align: left"><li>Statements cannot read data that has been modified but not yet committed by other transactions.</li>
+<li>No other transactions can modify data that has been read by the current transaction until the current transaction completes.</li>
+<li>Other transactions cannot insert new rows with key values that would fall in the range of keys read by any statements in the current transaction until the current transaction completes.</li>
+</div></ul>
+</body></html>
